@@ -1,0 +1,29 @@
+---
+interface Props {
+  path: string
+}
+
+const config = {
+  el: '#tcomment',
+  path: Astro.props.path,
+}
+---
+
+<div id="tcomment"></div>
+<script define:vars={{ config }}>
+function loadTwikoo() {
+    const script = document.createElement("script");
+    script.src =
+        "https://registry.npmmirror.com/twikoo/1.6.42/files/dist/twikoo.all.min.js";
+    script.defer = true;
+    script.onload = () => {
+        twikoo.init({
+            ...config,
+            envId: "https://twikoo.rimrose.work/.netlify/functions/twikoo", // 你的envId，获取方法请参照Twikoo文档
+        lang: "zh-CN", // 评论区语言
+      }); // 传入配置信息
+    };
+    document.body.appendChild(script);
+    }
+document.addEventListener("loadComment", loadTwikoo, { once: true }); // 监听加载评论事件，但是我们只能监听一次，从而避免多次触发。
+</script>
