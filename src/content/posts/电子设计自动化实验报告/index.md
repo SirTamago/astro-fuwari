@@ -9,7 +9,7 @@ draft: false
 ---
 
 :::tip
-原文地址：https://rimrose.top/%E7%94%B5%E5%AD%90%E8%AE%BE%E8%AE%A1%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/
+原文地址：https://rimrose.top/电子设计自动化实验报告/
 :::
 
 [电子设计自动化-实验报告](https://xzqi2q6kpm.feishu.cn/docx/YJQ9dlY4NooN5zxSEK3c6LNlneb?from=from_copylink)
