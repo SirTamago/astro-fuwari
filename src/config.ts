@@ -1,11 +1,4 @@
-import {
-	type CommentConfig,
-	type LicenseConfig,
-	LinkPreset,
-	type NavBarConfig,
-	type ProfileConfig,
-	type SiteConfig,
-} from "./types/config";
+import {type LicenseConfig, LinkPreset, type NavBarConfig, type ProfileConfig, type SiteConfig,} from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "RimieLab",
@@ -44,6 +37,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
+        LinkPreset.Friends,
         {
             name: "Bangumi",
             url: "/bangumi/",

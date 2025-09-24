@@ -10,7 +10,7 @@ draft: false
 
 111
 
-```powershell title="name"
+```powershell title="name" in
 # 要监控的文件夹
 $watchFolder = "D:\Export\HDR"
 
