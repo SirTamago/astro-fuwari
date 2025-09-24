@@ -6,6 +6,7 @@ image: ''
 tags: [Math]
 category: TEC
 draft: false
+series: '博客相关'
 ---
 
 :::note
@@ -31,6 +32,11 @@ draft: false
 
     参考：[Fuwari 功能增强 Episode2 - 幽々子](https://iuuko.com/posts/tinker/fuwari-enhance-ep2/)
 
+- 添加系列页面
+
+    参考：[在Fuwari中添加系列页面 - 伊卡](https://ikamusume7.org/posts/frontend/add_series_page/)
+
+- [](https://ikamusume7.org/posts/frontend/code_block_ex/)
 
 ## 代办
 
