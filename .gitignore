@@ -29,3 +29,5 @@ yarn.lock
 # IDE files
 .idea/
 deploy.ps1
+
+# just for testing
