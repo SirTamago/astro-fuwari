@@ -6,10 +6,10 @@ import Compress from "astro-compress";
 import icon from "astro-icon";
 import { defineConfig } from "astro/config";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
-import rehypeComponents from "rehype-components";/* Render the custom directive content */
+import rehypeComponents from "rehype-components"; /* Render the custom directive content */
 import rehypeKatex from "rehype-katex";
 import rehypeSlug from "rehype-slug";
-import remarkDirective from "remark-directive";/* Handle directives */
+import remarkDirective from "remark-directive"; /* Handle directives */
 import remarkGithubAdmonitionsToDirectives from "remark-github-admonitions-to-directives";
 import remarkMath from "remark-math";
 import remarkSectionize from "remark-sectionize";
@@ -25,42 +25,52 @@ import expressiveCode from "astro-expressive-code";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://rimrose.work/",
+  site: "https://blog.rimrose.work/",
   base: "/",
   trailingSlash: "always",
-  integrations: [tailwind(
-      {
-        nesting: true,
-      }
-  ), swup({
-    theme: false,
-    animationClass: "transition-swup-", // see https://swup.js.org/options/#animationselector
-    // the default value `transition-` cause transition delay
-    // when the Tailwind class `transition-all` is used
-    containers: ["main", "#toc", '#series'],
-    smoothScrolling: true,
-    cache: true,
-    preload: true,
-    accessibility: true,
-    updateHead: true,
-    updateBodyClass: false,
-    globalInstance: true,
-  }), icon({
-    include: {
-      "preprocess: vitePreprocess(),": ["*"],
-      "fa6-brands": ["*"],
-      "fa6-regular": ["*"],
-      "fa6-solid": ["*"],
-    },
-  }), svelte(), sitemap(), Compress({
-    CSS: false,
-    Image: false,
-    Action: {
-      Passed: async () => true, // https://github.com/PlayForm/Compress/issues/376
-    },
-  }), expressiveCode({
+  integrations: [
+    tailwind({
+      nesting: true,
+    }),
+    swup({
+      theme: false,
+      animationClass: "transition-swup-",
+      containers: ["main", "#toc", "#series"],
+      smoothScrolling: true,
+      cache: true,
+      preload: true,
+      accessibility: true,
+      updateHead: true,
+      updateBodyClass: false,
+      globalInstance: true,
+    }),
+    icon({
+      include: {
+        "preprocess: vitePreprocess(),": ["*"],
+        "fa6-brands": ["*"],
+        "fa6-regular": ["*"],
+        "fa6-solid": ["*"],
+      },
+    }),
+    svelte(),
+    sitemap(),
+    Compress({
+      CSS: false,
+      Image: false,
+      Action: {
+        Passed: async () => true,
+      },
+    }),
+
+    expressiveCode({
       themes: ["material-theme-darker", "light-plus"],
-  })
+      themeCssSelector: (theme) => {
+        // 纯净的选择器映射，不包含任何非法符号
+        if (theme.name === "material-theme-darker") return "html.dark &";
+        if (theme.name === "light-plus") return "html.light &";
+      },
+    }),
+
   ],
   markdown: {
     remarkPlugins: [
@@ -118,10 +128,9 @@ export default defineConfig({
     build: {
       rollupOptions: {
         onwarn(warning, warn) {
-          // temporarily suppress this warning
           if (
-            warning.message.includes("is dynamically imported by") &&
-            warning.message.includes("but also statically imported by")
+              warning.message.includes("is dynamically imported by") &&
+              warning.message.includes("but also statically imported by")
           ) {
             return;
           }
