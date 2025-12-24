@@ -39,15 +39,15 @@ export const navBarConfig: NavBarConfig = {
         LinkPreset.Series,
 		LinkPreset.About,
         LinkPreset.Friends,
-        {
-            name: "Bangumi",
-            url: "/bangumi/",
-        },
-		// {
-		// 	name: "主站",
-		// 	url: "https://rimrose.top",
-		// 	external: true,
-		// },
+        // {
+        //     name: "Bangumi",
+        //     url: "/bangumi/",
+        // },
+		{
+			name: "主站",
+			url: "https://rimrose.top",
+			external: true,
+		},
 	],
 };
 
@@ -72,6 +72,11 @@ export const profileConfig: ProfileConfig = {
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/SirTamago",
+		},
+		{
+			name: "BiliBili",
+			icon: "fa6-brands:bilibili",
+			url: "https://space.bilibili.com/30333799",
 		},
 	],
 };
