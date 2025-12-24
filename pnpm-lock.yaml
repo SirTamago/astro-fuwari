@@ -32,6 +32,15 @@ importers:
       '@fontsource-variable/jetbrains-mono':
         specifier: ^5.2.5
         version: 5.2.5
+      '@fontsource/m-plus-rounded-1c':
+        specifier: ^5.2.9
+        version: 5.2.9
+      '@fontsource/noto-sans-jp':
+        specifier: ^5.2.8
+        version: 5.2.8
+      '@fontsource/noto-sans-sc':
+        specifier: ^5.2.8
+        version: 5.2.8
       '@fontsource/roboto':
         specifier: ^5.2.5
         version: 5.2.5
@@ -1077,6 +1086,15 @@ packages:
 
   '@fontsource-variable/jetbrains-mono@5.2.5':
     resolution: {integrity: sha512-G3sN1xq1moZd0JL+hFaA4MEdsiQS+JXC/z7m+EqA5/Fzn5CQlXGUaaNKFGQdDsFuLTnCfW0KOOSWHjygNfjEPw==}
+
+  '@fontsource/m-plus-rounded-1c@5.2.9':
+    resolution: {integrity: sha512-zvgI9lzoZNtRxD3JKcECfPJDRGJfNpFEsWBkGQkBEOKM0pArTmjTwsTPCz3UttNX6EvQyYlSqklhXnLt056cAA==}
+
+  '@fontsource/noto-sans-jp@5.2.8':
+    resolution: {integrity: sha512-ngWXPtSV3XH8ZmNX9hnfeQ+x/3mCoaAOA3BVDcyS5jQdh4FYqKjf/S9tEUEYDPwGa2pULJVXTO2+oFg42gWvSw==}
+
+  '@fontsource/noto-sans-sc@5.2.8':
+    resolution: {integrity: sha512-8T8HxIS3uAMCfaQawKRH/6yYZ1oRnJZB/CrGwfxGgJa+zAOBgx2lqZMiTY/WbQpLGlPRqX4zHXJYI09CI2q6tA==}
 
   '@fontsource/roboto@5.2.5':
     resolution: {integrity: sha512-70r2UZ0raqLn5W+sPeKhqlf8wGvUXFWlofaDlcbt/S3d06+17gXKr3VNqDODB0I1ASme3dGT5OJj9NABt7OTZQ==}
@@ -6382,6 +6400,12 @@ snapshots:
       '@expressive-code/core': 0.41.3
 
   '@fontsource-variable/jetbrains-mono@5.2.5': {}
+
+  '@fontsource/m-plus-rounded-1c@5.2.9': {}
+
+  '@fontsource/noto-sans-jp@5.2.8': {}
+
+  '@fontsource/noto-sans-sc@5.2.8': {}
 
   '@fontsource/roboto@5.2.5': {}
 

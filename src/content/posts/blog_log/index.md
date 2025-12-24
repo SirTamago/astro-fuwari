@@ -36,16 +36,12 @@ series: '博客相关'
 
     参考：[在Fuwari中添加系列页面 - 伊卡](https://ikamusume7.org/posts/frontend/add_series_page/)
 
-- [](https://ikamusume7.org/posts/frontend/code_block_ex/)
+- [增强Fuwari的代码块功能](https://ikamusume7.org/posts/frontend/code_block_ex/)
 
 ## 代办
 
-- [](https://aulypc1.github.io/posts/website/some_writing_and_functional_grammar/)
+- [一些写作和功能语法](https://aulypc1.github.io/posts/website/some_writing_and_functional_grammar/)
 
 - 禁用图像优化（这个还没鼓捣明白）
 
     [禁用Astro跟弱智一般的静态构建图像优化 - 二叉树树](https://2x.nz/posts/disable-astro-generating-optimized-images/)
-
-- [](https://ikamusume7.org/posts/frontend/code_block_ex/)
-
-- [](https://ikamusume7.org/posts/frontend/some_small_code_changes/)
