@@ -22,7 +22,6 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 import rehypeFigure from "./src/plugins/rehype-figure.mjs";
 
 import expressiveCode from "astro-expressive-code";
-import remarkImageWidth from "./src/plugins/remark-image-width.js";
 // https://astro.build/config
 export default defineConfig({
   site: "https://blog.rimrose.work/",
@@ -81,7 +80,6 @@ export default defineConfig({
       remarkDirective,
       remarkSectionize,
       parseDirectiveNode,
-      remarkImageWidth,
     ],
     rehypePlugins: [
       rehypeFigure,
