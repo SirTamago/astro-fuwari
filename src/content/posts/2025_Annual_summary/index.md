@@ -9,6 +9,10 @@ draft: false
 ---
 
 
+:::note
+让 Gemini 给我写了一个更方便看的年度事件模板：https://chronicle.rimrose.work/
+:::
+
 ## 远山老师的To签 - 01.28
 
 2025年的大事件居然从1月28号才开始算

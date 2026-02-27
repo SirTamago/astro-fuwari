@@ -1,18 +1,26 @@
 ---
-title: '关于HDR图片在不同设备和不同环境上的显示问题'
-published: 2025-09-20
-description: ''
+title: '将安卓手机拍摄的HDR照片转为avif格式的一种方法'
+published: 2026-01-08
+description: '关于手机拍的HDR图片的格式转换以及在avif格式下的表现'
 image: ''
-tags: []
+tags: ['HDR', 'AVIF', '图像处理']
 category: 'TEC'
-draft: false
-series: '博客相关'
+series: 'HDR与AVIF'
+draft: true
 ---
 
 :::note
 - 这个内容还没写完
 - 我使用的图床基于 Cloudflare R2，速度可能比较慢，若出现图片加载不出来的情况请尝试多等待几秒或者直接多刷新几次
-:::
+  :::
+
+
+
+
+[](https://github.com/google/libultrahdr/blob/main/docs/building.md)
+
+
+
 
 ## 图片效果对比
 
