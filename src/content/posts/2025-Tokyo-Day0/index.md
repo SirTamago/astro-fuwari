@@ -1,7 +1,7 @@
 ---
 title: '2025东京七日游Day0'
 published: 2026-02-24
-description: ''
+description: '晚上十点半出发，第二天晚上五点到东京'
 image: 'https://tokyo2025.rimrose.work/IMG_20251026_180441_google_pq.avif'
 tags: ['Tokyo', 'Travel']
 category: 'REC'
